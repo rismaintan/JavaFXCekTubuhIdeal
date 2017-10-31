@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="532.0" prefWidth="431.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pengecekankesehatan.FXMLDocumentController">
+    <children>
+      <AnchorPane layoutX="-166.0" layoutY="-10.0" prefHeight="74.0" prefWidth="200.0" style="-fx-background-color: grey;" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="59.0" layoutY="3.0" prefHeight="52.0" prefWidth="336.0" text="Cek Tubuh Ideal">
+         <font>
+            <Font name="DFMincho-SU" size="43.0" />
+         </font></Label>
+      <Label layoutX="87.0" layoutY="82.0" text="Nama">
+         <font>
+            <Font name="DFGothic-EB" size="18.0" />
+         </font></Label>
+      <Label layoutX="76.0" layoutY="120.0" text="Tinggi">
+         <font>
+            <Font name="DFGothic-EB" size="18.0" />
+         </font></Label>
+      <Label layoutX="59.0" layoutY="155.0" text="Berat Badan">
+         <font>
+            <Font name="DFGothic-EB" size="16.0" />
+         </font></Label>
+      <Label layoutX="58.0" layoutY="194.0" text="Jenis Kelamin">
+         <font>
+            <Font name="DFGothic-EB" size="15.0" />
+         </font></Label>
+      <JFXTextField fx:id="idNama" layoutX="173.0" layoutY="71.0" maxWidth="201.0" minWidth="201.0" prefHeight="31.0" prefWidth="201.0" />
+      <JFXTextField fx:id="idTinggi" layoutX="173.0" layoutY="108.0" maxWidth="201.0" minWidth="201.0" prefHeight="31.0" prefWidth="201.0" />
+      <JFXTextField fx:id="idBB" layoutX="173.0" layoutY="141.0" maxWidth="201.0" minWidth="201.0" prefHeight="31.0" prefWidth="201.0" />
+      <RadioButton fx:id="idlaki" layoutX="195.0" layoutY="194.0" mnemonicParsing="false" text="Laki Laki">
+         <toggleGroup>
+            <ToggleGroup fx:id="pilih" />
+         </toggleGroup>
+         <font>
+            <Font name="DFGothic-EB" size="15.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="idPerempuan" layoutX="196.0" layoutY="228.0" mnemonicParsing="false" text="Perempuan" toggleGroup="$pilih">
+         <font>
+            <Font name="DFGothic-EB" size="15.0" />
+         </font></RadioButton>
+      <Label layoutX="51.0" layoutY="323.0" text="Berat Badan ideal anda">
+         <font>
+            <Font name="DFGothic-EB" size="14.0" />
+         </font></Label>
+      <JFXButton fx:id="proses" layoutX="193.0" layoutY="273.0" onAction="#Proses" style="-fx-background-color: lightpink;" text="Proses">
+         <font>
+            <Font name="DFGothic-EB" size="18.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="reset" layoutX="287.0" layoutY="273.0" onAction="#Reset" style="-fx-background-color: lightpink;" text="Reset">
+         <font>
+            <Font name="DFGothic-EB" size="18.0" />
+         </font></JFXButton>
+      <TextArea fx:id="hasil" layoutX="46.0" layoutY="365.0" prefHeight="52.0" prefWidth="361.0" />
+      <TextArea fx:id="saran" layoutX="47.0" layoutY="425.0" prefHeight="52.0" prefWidth="361.0" />
+      <TextField fx:id="tfBB" layoutX="227.0" layoutY="319.0" />
+      <Label layoutX="387.0" layoutY="323.0" text="kg">
+         <font>
+            <Font name="DFGothic-EB" size="15.0" />
+         </font></Label>
+      <AnchorPane layoutX="-165.0" layoutY="138.0" prefHeight="74.0" prefWidth="200.0" style="-fx-background-color: grey;" />
+      <AnchorPane layoutX="-165.0" layoutY="286.0" prefHeight="74.0" prefWidth="200.0" style="-fx-background-color: grey;" />
+      <AnchorPane layoutX="-165.0" layoutY="427.0" prefHeight="74.0" prefWidth="200.0" style="-fx-background-color: grey;" />
+    </children>
+</AnchorPane>
